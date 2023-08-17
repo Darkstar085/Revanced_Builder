@@ -4,6 +4,7 @@ patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
 cli-source = "j-hc/revanced-cli"
 excluded-patches = "always-autorepeat custom-branding disable-zoom-haptics hide-shorts-components hide-captions-button hide-endscreen-cards"
+included-patches = ""
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
