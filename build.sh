@@ -9,6 +9,7 @@ source action.sh
 vtf() { if ! isoneof "${1}" "true" "false"; then abort "ERROR: '${1}' is not a valid option for '${2}': only true or false is allowed"; fi; }
 
 toml_prep "$(cat 2>/dev/null "${1:-config.toml}")" || abort "could not find config file '${1:-config.toml}'\n\tUsage: $0 <config.toml>"
+REMOVE_RV_INTEGRATIONS_CHECKS="true"
 
 mkdir -p $TEMP_DIR $BUILD_DIR
 
